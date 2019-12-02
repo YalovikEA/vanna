@@ -1,34 +1,150 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--[if IE]>
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <![endif]-->
-  <!--[if lt IE 9]>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
-  <![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--[if IE]>
+					  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+					  <![endif]-->
+		<!--[if lt IE 9]>
+				  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+				  <![endif]--><title>
+		Page title
+		</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap&subset=cyrillic" rel="stylesheet"> <link rel="stylesheet" href="styles/main.css">
+	</head>
+
+	<body>
+		<div class="page-wrapper">
+			@include('./html/header.html')
+
+			<main class="page-content">
+				<section class="section intro">
+					<div class="container">
+						<h2 class="section__title intro__title">Основное меню и банер</h2>
+						<div class="intro-menu page-menu menu">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a class="menu__link" href="#">Ванны</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="#">Душевые</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="#">Смесители</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="#">Полотенцесушители</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="#">Мебель для ванной</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="#">Сантехпосуда</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="#">Аксессуары</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="#">Сифоны и трапы</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="#">Инсталяции</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="#">Другие товары</a>
+								</li>
+							</ul>
+						</div>
+						<div class="intro__banner banner">
+							<ul class="banner__list">
+								<li class="banner__item">
+									<img class="banner__img" src="./img/content/banner.jpg" alt="#">
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<section class="section leaders">
+					<h2 class="section__title leaders__title">Лидеры продаж</h2>
+          <div class="slider owl-carousel owl-theme">
+            <div class="slider__item slide">
+              <div class="slide__img">
+                <img src="./img/content/leaders.jpg" alt="#">
+              </div>
+              <div class="slide__content">
+                <p class="slide__text">Потолочная душевая лейка Rea Ultra Slim SQUARE</p>
+                <p class="slide__price">118.00 руб.</p>
+              </div>
+            </div>
+            <div class="slider__item slide">
+              <div class="slide__img">
+                <img src="./img/content/leaders.jpg" alt="#">
+              </div>
+              <div class="slide__content">
+                <p class="slide__text">Потолочная душевая лейка Rea Ultra Slim SQUARE</p>
+                <p class="slide__price">118.00 руб.</p>
+              </div>
+            </div>
+            <div class="slider__item slide">
+              <div class="slide__img">
+                <img src="./img/content/leaders.jpg" alt="#">
+              </div>
+              <div class="slide__content">
+                <p class="slide__text">Потолочная душевая лейка Rea Ultra Slim SQUARE</p>
+                <p class="slide__price">118.00 руб.</p>
+              </div>
+            </div>
+            <div class="slider__item slide">
+              <div class="slide__img">
+                <img src="./img/content/leaders.jpg" alt="#">
+              </div>
+              <div class="slide__content">
+                <p class="slide__text">Потолочная душевая лейка Rea Ultra Slim SQUARE</p>
+                <p class="slide__price">118.00 руб.</p>
+              </div>
+            </div>
+            <div class="slider__item slide">
+              <div class="slide__img">
+                <img src="./img/content/leaders.jpg" alt="#">
+              </div>
+              <div class="slide__content">
+                <p class="slide__text">Потолочная душевая лейка Rea Ultra Slim SQUARE</p>
+                <p class="slide__price">118.00 руб.</p>
+              </div>
+            </div>
+            <div class="slider__item slide">
+              <div class="slide__img">
+                <img src="./img/content/leaders.jpg" alt="#">
+              </div>
+              <div class="slide__content">
+                <p class="slide__text">Потолочная душевая лейка Rea Ultra Slim SQUARE</p>
+                <p class="slide__price">118.00 руб.</p>
+              </div>
+            </div>
+            <div class="slider__item slide">
+              <div class="slide__img">
+                <img src="./img/content/leaders.jpg" alt="#">
+              </div>
+              <div class="slide__content">
+                <p class="slide__text">Потолочная душевая лейка Rea Ultra Slim SQUARE</p>
+                <p class="slide__price">118.00 руб.</p>
+              </div>
+            </div>
+          </div>
+				</section>
 
 
-  <title>Page title</title>
+			</main>
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap&subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="styles/main.css">
-</head>
+			@include('./html/footer.html')
+		</div>
 
-<body>
-  <div class="page-wrapper">
-    @include('./html/header.html')
-
-    <main class="page-content"></main>
-
-    @include('./html/footer.html')
-  </div>
-
-  <script src="js/libs.min.js"></script>
-  <script src="js/main.min.js"></script>
-</body>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+		<script src="js/libs.min.js"></script>
+		<script src="js/main.min.js"></script>
+	</body>
 
 </html>
