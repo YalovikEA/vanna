@@ -3,6 +3,8 @@ $(document).ready(function() {
 
   $('.slider').owlCarousel({
     // stagePadding: 305,
+    animateOut: 'fadeOut',
+    smartSpeed: 1000,
     center: true,
     loop: true,
     margin: 45,
@@ -15,7 +17,7 @@ $(document).ready(function() {
             items: 2
         },
         1000:{
-            items: 5
+            items: 4
         }
     }
   });

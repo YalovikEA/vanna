@@ -183,6 +183,30 @@ input[type="file"].visually-hidden {
 }
 
 // LEADERS
+.owl-stage-outer {
+
+    // position: relative;
+
+    // &::before,
+    // &::after {
+    //     content: "";
+    //     position: absolute;
+    //     top: 0;
+    //     z-index: 1;
+    //     width: 10%;
+    //     height: 100%;
+    //     background: rgba(255, 255, 255, .7);
+    // }
+
+    // &::before {
+    //     left: 0;
+    // }
+
+    // &::after {
+    //     right: 0;
+    // }
+}
+
 .owl-item {
     position: relative;
 }
@@ -203,4 +227,17 @@ input[type="file"].visually-hidden {
 
 .owl-item.active .slide__img::before {
     content: none;
+}
+
+.owl-item.center + .active + .active .slide__img {
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, .7);
+    }
 }
