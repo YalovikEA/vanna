@@ -3,7 +3,7 @@ module.exports = function () {
     return $.gulp.src([
 			'node_modules/svg4everybody/dist/svg4everybody.min.js',
 			'node_modules/owl.carousel/dist/owl.carousel.min.js',
-			'node_modules/webp-in-css/index.js',
+			// 'node_modules/webp-in-css/index.js',
 		])
 			.pipe($.gp.concat('libs.min.js'))
 			.pipe($.gulp.dest('./build/js/'))
@@ -16,7 +16,7 @@ module.exports = function () {
     return $.gulp.src([
 			'node_modules/svg4everybody/dist/svg4everybody.min.js',
 			'node_modules/owl.carousel/dist/owl.carousel.min.js',
-			'node_modules/webp-in-css/index.js',
+			// 'node_modules/webp-in-css/index.js',
 		])
 			.pipe($.gp.concat('libs.min.js'))
 			.pipe($.gp.uglifyjs())

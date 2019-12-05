@@ -9,6 +9,7 @@ $(document).ready(function() {
     loop: true,
     margin: 45,
     nav: true,
+    dots: false,
     responsive:{
         0:{
             items: 1

@@ -12,9 +12,9 @@ module.exports = function () {
 					message: error.message
 				};
 			}))
-			.pipe($.gp.postcss([
-				require('webp-in-css/plugin')
-			]))
+			// .pipe($.gp.postcss([
+			// 	require('webp-in-css/plugin')
+			// ]))
 			.pipe($.gp.autoprefixer({
 				browsers: ['last 2 version']
 			}))
