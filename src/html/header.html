@@ -40,45 +40,70 @@
     <div class="page-header__bottom">
         <div class="container">
             <div class="page-header__logo logo">
-                <img class="logo__img" src="../img/content/header-logo.svg" alt="Описание логотипа">
+                <a class="logo__link" href="/">
+                    <img class="logo__img" src="../img/content/header-logo.svg" alt="Описание логотипа">
+                </a>
             </div>
             <div class="page-header__search search">
                 <form class="search-form" action="">
-                    <input class="search-form__input" type="text" placeholder="Поиск по товарам и категориям">
-                    <button class="search-form__submit" aria-label="Поиск"></button>
+                    <div class="search-form__block">
+                        <input class="search-form__input" type="text" placeholder="Поиск по товарам и категориям">
+                        <button class="search-form__submit" aria-label="Поиск"></button>
+                    </div>
                 </form>
             </div>
             <div class="page-header__contacts contacts">
                 <a class="contacts__main" href="tel:+375296717189">+375 29 671-71-89</a>
                 <div class="contacts__wrapper">
                     <div class="contacts__category contacts__category--phones">
-                        <h3 class="contacts__title">Контактная информация</h3>
+                        <h3 class="contacts__title">Контактная информация:</h3>
                         <ul class="contacts__list">
                             <li class="contacts__item">
-                                <a class="contacts__link" href="tel:+375296334555">+375 29 633-45-55</a>
+                                <a class="contacts__link" href="tel:+375296334555">
+                                    <img class="contacts__link-img" src="./img/content/a1.png" alt="#">
+                                    <span class="contacts__link-text">+375 29 633-45-55</span>
+                                </a>
                             </li>
                             <li class="contacts__item">
-                                <a class="contacts__link" href="tel:+375296374214">+375 29 637-42-14</a>
+                                <a class="contacts__link" href="tel:+375296374214">
+                                    <img class="contacts__link-img" src="./img/content/a1.png" alt="#">
+                                    <span class="contacts__link-text">+375 29 637-42-14</span>
+                                </a>
                             </li>
                             <li class="contacts__item">
-                                <a class="contacts__link" href="tel:+375297752578">+375 29 775-25-78</a>
+                                <a class="contacts__link" href="tel:+375297752578">
+                                    <img class="contacts__link-img" src="./img/content/mts.png" alt="#">
+                                    <span class="contacts__link-text">+375 29 775-25-78</span>
+                                </a>
                             </li>
                             <li class="contacts__item">
-                                <a class="contacts__link" href="tel:+375292216216">+375 29 221-62-16</a>
+                                <a class="contacts__link" href="tel:+375292216216">
+                                    <img class="contacts__link-img" src="./img/content/mts.png" alt="#">
+                                    <span class="contacts__link-text">+375 29 221-62-16</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
                     <div class="contacts__category contacts__category--online">
-                        <h3 class="contacts__title">Онлайн консультации</h3>
+                        <h3 class="contacts__title">Онлайн консультации:</h3>
                         <ul class="contacts__list">
                             <li class="contacts__item">
-                                <a class="contacts__link" href="#">+375-29-671-71-89</a>
+                                <a class="contacts__link" href="#">
+                                    <img class="contacts__link-img" src="./img/content/viber.png" alt="#"
+                                    ><span class="contacts__link-text">+375-29-671-71-89</span>
+                                </a>
                             </li>
                             <li class="contacts__item">
-                                <a class="contacts__link" href="#">+375-29-671-71-89</a>
+                                <a class="contacts__link" href="#">
+                                    <img class="contacts__link-img" src="./img/content/telegram.png" alt="#"
+                                    ><span class="contacts__link-text">+375-29-671-71-89</span>
+                                </a>
                             </li>
                             <li class="contacts__item">
-                                <a class="contacts__link" href="mailto:info@topvanna.by">info@topvanna.by</a>
+                                <a class="contacts__link" href="mailto:info@topvanna.by">
+                                    <img class="contacts__link-img" src="./img/content/mail.png"
+                                     alt="#"><span class="contacts__link-text">info@topvanna.by</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -86,18 +111,57 @@
                         <h3 class="contacts__title">Социальные сети</h3>
                         <ul class="contacts__list">
                             <li class="contacts__item">
-                                <a class="contacts__link" href="#">Instagram</a>
+                                <a class="contacts__link" href="#">
+                                    <img class="contacts__link-img" src="./img/content/instagram.svg" alt="#">
+                                    <span class="contacts__link-text">Instagram</span>
+                                </a>
                             </li>
                             <li class="contacts__item">
-                                <a class="contacts__link" href="#">Facebook</a>
+                                <a class="contacts__link" href="#">
+                                    <img class="contacts__link-img" src="./img/content/facebook.svg" alt="#">
+                                    <span class="contacts__link-text">Facebook</span>
+                                </a>
                             </li>
                             <li class="contacts__item">
-                                <a class="contacts__link" href="#">Twitter</a>
+                                <a class="contacts__link" href="#">
+                                    <img class="contacts__link-img" src="./img/content/vkontakte.svg" alt="#">
+                                    <span class="contacts__link-text">Vkontakte</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
+            <div class="page-header__cart cart">
+                <a class="cart__link" href="https://topvanna.by/index.php?route=checkout/cart" aria-label="Перейти в корзину">
+                    <span class="cart__counter">1</span>
+                    <span class="cart__total">345.00</span>
+                </a>
+                <div class="cart__dropdown">
+                    <p>Ваша корзина пуста!</p>
+                </div>
+            </div>
+            <!-- <div id="cart_block" class="dropdown">
+                <div class="cart-heading dropdown-toogle" data-hover="dropdown" data-toggle="dropdown" onclick="window.location.href = 'https://topvanna.by/index.php?route=checkout/cart'">
+                    <i class="cart-count">
+                        <span id="total_count_ajax">0</span>
+                    </i>
+                    <i class="cart-icon">
+                        <img src="catalog/view/theme/fastor/img/icon-cart-hover.png" class="cart-icon-hover" alt="">
+                        <img src="catalog/view/theme/fastor/img/icon-cart.png" class="cart-icon-standard" alt="">
+                    </i>
+                    <p>
+                        <strong id="total_price_ajax">
+                            <span id="total_price">0.00 руб.</span>
+                        </strong>
+                    </p>
+                </div>
+                <div class="dropdown-menu" id="cart_content">
+                    <div id="cart_content_ajax">
+                        <div class="empty">Ваша корзина пуста!</div>
+                    </div>
+                </div>
+            </div> -->
         </div>
     </div>
 </header>
