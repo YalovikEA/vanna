@@ -31,9 +31,9 @@ module.exports = function () {
 			.pipe($.gp.sass({
 				'include css': true
 			}))
-			.pipe($.gp.postcss([
-				require('webp-in-css/plugin')
-			]))
+			// .pipe($.gp.postcss([
+			// 	require('webp-in-css/plugin')
+			// ]))
 			.pipe($.gp.autoprefixer({
 				browsers: ['last 2 version']
 			}))
