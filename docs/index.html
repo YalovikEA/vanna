@@ -59,45 +59,70 @@
     <div class="page-header__bottom">
         <div class="container">
             <div class="page-header__logo logo">
-                <img class="logo__img" src="../img/content/header-logo.svg" alt="Описание логотипа">
+                <a class="logo__link" href="/">
+                    <img class="logo__img" src="../img/content/header-logo.svg" alt="Описание логотипа">
+                </a>
             </div>
             <div class="page-header__search search">
                 <form class="search-form" action="">
-                    <input class="search-form__input" type="text" placeholder="Поиск по товарам и категориям">
-                    <button class="search-form__submit" aria-label="Поиск"></button>
+                    <div class="search-form__block">
+                        <input class="search-form__input" type="text" placeholder="Поиск по товарам и категориям">
+                        <button class="search-form__submit" aria-label="Поиск"></button>
+                    </div>
                 </form>
             </div>
             <div class="page-header__contacts contacts">
                 <a class="contacts__main" href="tel:+375296717189">+375 29 671-71-89</a>
                 <div class="contacts__wrapper">
                     <div class="contacts__category contacts__category--phones">
-                        <h3 class="contacts__title">Контактная информация</h3>
+                        <h3 class="contacts__title">Контактная информация:</h3>
                         <ul class="contacts__list">
                             <li class="contacts__item">
-                                <a class="contacts__link" href="tel:+375296334555">+375 29 633-45-55</a>
+                                <a class="contacts__link" href="tel:+375296334555">
+                                    <img class="contacts__link-img" src="./img/content/a1.png" alt="#">
+                                    <span class="contacts__link-text">+375 29 633-45-55</span>
+                                </a>
                             </li>
                             <li class="contacts__item">
-                                <a class="contacts__link" href="tel:+375296374214">+375 29 637-42-14</a>
+                                <a class="contacts__link" href="tel:+375296374214">
+                                    <img class="contacts__link-img" src="./img/content/a1.png" alt="#">
+                                    <span class="contacts__link-text">+375 29 637-42-14</span>
+                                </a>
                             </li>
                             <li class="contacts__item">
-                                <a class="contacts__link" href="tel:+375297752578">+375 29 775-25-78</a>
+                                <a class="contacts__link" href="tel:+375297752578">
+                                    <img class="contacts__link-img" src="./img/content/mts.png" alt="#">
+                                    <span class="contacts__link-text">+375 29 775-25-78</span>
+                                </a>
                             </li>
                             <li class="contacts__item">
-                                <a class="contacts__link" href="tel:+375292216216">+375 29 221-62-16</a>
+                                <a class="contacts__link" href="tel:+375292216216">
+                                    <img class="contacts__link-img" src="./img/content/mts.png" alt="#">
+                                    <span class="contacts__link-text">+375 29 221-62-16</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
                     <div class="contacts__category contacts__category--online">
-                        <h3 class="contacts__title">Онлайн консультации</h3>
+                        <h3 class="contacts__title">Онлайн консультации:</h3>
                         <ul class="contacts__list">
                             <li class="contacts__item">
-                                <a class="contacts__link" href="#">+375-29-671-71-89</a>
+                                <a class="contacts__link" href="#">
+                                    <img class="contacts__link-img" src="./img/content/viber.png" alt="#"
+                                    ><span class="contacts__link-text">+375-29-671-71-89</span>
+                                </a>
                             </li>
                             <li class="contacts__item">
-                                <a class="contacts__link" href="#">+375-29-671-71-89</a>
+                                <a class="contacts__link" href="#">
+                                    <img class="contacts__link-img" src="./img/content/telegram.png" alt="#"
+                                    ><span class="contacts__link-text">+375-29-671-71-89</span>
+                                </a>
                             </li>
                             <li class="contacts__item">
-                                <a class="contacts__link" href="mailto:info@topvanna.by">info@topvanna.by</a>
+                                <a class="contacts__link" href="mailto:info@topvanna.by">
+                                    <img class="contacts__link-img" src="./img/content/mail.png"
+                                     alt="#"><span class="contacts__link-text">info@topvanna.by</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -105,18 +130,57 @@
                         <h3 class="contacts__title">Социальные сети</h3>
                         <ul class="contacts__list">
                             <li class="contacts__item">
-                                <a class="contacts__link" href="#">Instagram</a>
+                                <a class="contacts__link" href="#">
+                                    <img class="contacts__link-img" src="./img/content/instagram.svg" alt="#">
+                                    <span class="contacts__link-text">Instagram</span>
+                                </a>
                             </li>
                             <li class="contacts__item">
-                                <a class="contacts__link" href="#">Facebook</a>
+                                <a class="contacts__link" href="#">
+                                    <img class="contacts__link-img" src="./img/content/facebook.svg" alt="#">
+                                    <span class="contacts__link-text">Facebook</span>
+                                </a>
                             </li>
                             <li class="contacts__item">
-                                <a class="contacts__link" href="#">Twitter</a>
+                                <a class="contacts__link" href="#">
+                                    <img class="contacts__link-img" src="./img/content/vkontakte.svg" alt="#">
+                                    <span class="contacts__link-text">Vkontakte</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
+            <div class="page-header__cart cart">
+                <a class="cart__link" href="https://topvanna.by/index.php?route=checkout/cart" aria-label="Перейти в корзину">
+                    <span class="cart__counter">1</span>
+                    <span class="cart__total">345.00</span>
+                </a>
+                <div class="cart__dropdown">
+                    <p>Ваша корзина пуста!</p>
+                </div>
+            </div>
+            <!-- <div id="cart_block" class="dropdown">
+                <div class="cart-heading dropdown-toogle" data-hover="dropdown" data-toggle="dropdown" onclick="window.location.href = 'https://topvanna.by/index.php?route=checkout/cart'">
+                    <i class="cart-count">
+                        <span id="total_count_ajax">0</span>
+                    </i>
+                    <i class="cart-icon">
+                        <img src="catalog/view/theme/fastor/img/icon-cart-hover.png" class="cart-icon-hover" alt="">
+                        <img src="catalog/view/theme/fastor/img/icon-cart.png" class="cart-icon-standard" alt="">
+                    </i>
+                    <p>
+                        <strong id="total_price_ajax">
+                            <span id="total_price">0.00 руб.</span>
+                        </strong>
+                    </p>
+                </div>
+                <div class="dropdown-menu" id="cart_content">
+                    <div id="cart_content_ajax">
+                        <div class="empty">Ваша корзина пуста!</div>
+                    </div>
+                </div>
+            </div> -->
         </div>
     </div>
 </header>
@@ -129,34 +193,893 @@
 						<div class="intro-menu page-menu menu">
 							<ul class="menu__list">
 								<li class="menu__item">
-									<a class="menu__link" href="#">Ванны</a>
+									<a class="menu__link" href="#">
+                    <img class="menu__link-img" src="./img/content/menu-1.png" alt="#">
+                    <span class="menu__link-text">Ванны</span>
+                  </a>
+                  <div class="menu__submenu submenu">
+                    <div class="submenu__block">
+                      <h3 class="submenu__block-title">
+                        <a href="#">Акриловые ванны</a>
+                      </h3>
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="submenu__block">
+                      <h3 class="submenu__block-title">
+                        <a href="#">Акриловые ванны</a>
+                      </h3>
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="submenu__block">
+                      <h3 class="submenu__block-title">
+                        <a href="#">Акриловые ванны</a>
+                      </h3>
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="submenu__block">
+                      <h3 class="submenu__block-title">
+                        <a href="#">Акриловые ванны</a>
+                      </h3>
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="submenu__block">
+                      <h3 class="submenu__block-title">
+                        <a href="#">Акриловые ванны</a>
+                      </h3>
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="submenu__block">
+                      <h3 class="submenu__block-title">
+                        <a href="#">Акриловые ванны</a>
+                      </h3>
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="submenu__block">
+                      <h3 class="submenu__block-title">
+                        <a href="#">Акриловые ванны</a>
+                      </h3>
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="submenu__block">
+                      <h3 class="submenu__block-title">
+                        <a href="#">Акриловые ванны</a>
+                      </h3>
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
 								</li>
 								<li class="menu__item">
-									<a class="menu__link" href="#">Душевые</a>
+									<a class="menu__link" href="#">
+                    <img class="menu__link-img" src="./img/content/menu-2.png" alt="#">
+                    <span class="menu__link-text">Душевые</span>
+                  </a>
+                                  <div class="menu__submenu submenu">
+                    <div class="submenu__block">
+                      <h3 class="submenu__block-title">
+                        <a href="#">Акриловые ванны</a>
+                      </h3>
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="submenu__block">
+                      <h3 class="submenu__block-title">
+                        <a href="#">Акриловые ванны</a>
+                      </h3>
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="submenu__block">
+                      <h3 class="submenu__block-title">
+                        <a href="#">Акриловые ванны</a>
+                      </h3>
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="submenu__block">
+                      <h3 class="submenu__block-title">
+                        <a href="#">Акриловые ванны</a>
+                      </h3>
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="submenu__block">
+                      <h3 class="submenu__block-title">
+                        <a href="#">Акриловые ванны</a>
+                      </h3>
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="submenu__block">
+                      <h3 class="submenu__block-title">
+                        <a href="#">Акриловые ванны</a>
+                      </h3>
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="submenu__block">
+                      <h3 class="submenu__block-title">
+                        <a href="#">Акриловые ванны</a>
+                      </h3>
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="submenu__block">
+                      <h3 class="submenu__block-title">
+                        <a href="#">Акриловые ванны</a>
+                      </h3>
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
 								</li>
 								<li class="menu__item">
-									<a class="menu__link" href="#">Смесители</a>
+									<a class="menu__link" href="#">
+                    <img class="menu__link-img" src="./img/content/menu-3.png" alt="#">
+                    <span class="menu__link-text">Смесители</span>
+                  </a>
+                                  <div class="menu__submenu submenu">
+                    <div class="submenu__block">
+                      <h3 class="submenu__block-title">
+                        <a href="#">Акриловые ванны</a>
+                      </h3>
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="submenu__block">
+                      <h3 class="submenu__block-title">
+                        <a href="#">Акриловые ванны</a>
+                      </h3>
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="submenu__block">
+                      <h3 class="submenu__block-title">
+                        <a href="#">Акриловые ванны</a>
+                      </h3>
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="submenu__block">
+                      <h3 class="submenu__block-title">
+                        <a href="#">Акриловые ванны</a>
+                      </h3>
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="submenu__block">
+                      <h3 class="submenu__block-title">
+                        <a href="#">Акриловые ванны</a>
+                      </h3>
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="submenu__block">
+                      <h3 class="submenu__block-title">
+                        <a href="#">Акриловые ванны</a>
+                      </h3>
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="submenu__block">
+                      <h3 class="submenu__block-title">
+                        <a href="#">Акриловые ванны</a>
+                      </h3>
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="submenu__block">
+                      <h3 class="submenu__block-title">
+                        <a href="#">Акриловые ванны</a>
+                      </h3>
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
 								</li>
 								<li class="menu__item">
-									<a class="menu__link" href="#">Полотенцесушители</a>
+									<a class="menu__link" href="#">
+                    <img class="menu__link-img" src="./img/content/menu-4.png" alt="#">
+                    <span class="menu__link-text">Полотенцесушители</span>
+                  </a>
 								</li>
 								<li class="menu__item">
-									<a class="menu__link" href="#">Мебель для ванной</a>
+									<a class="menu__link" href="#">
+                    <img class="menu__link-img" src="./img/content/menu-5.png" alt="#">
+                    <span class="menu__link-text">Мебель для ванной</span>
+                  </a>
 								</li>
 								<li class="menu__item">
-									<a class="menu__link" href="#">Сантехпосуда</a>
+									<a class="menu__link" href="#">
+                    <img class="menu__link-img" src="./img/content/menu-6.png" alt="#">
+                    <span class="menu__link-text">Сантехпосуда</span>
+                  </a>
+                                  <div class="menu__submenu submenu">
+                    <div class="submenu__block">
+                      <h3 class="submenu__block-title">
+                        <a href="#">Акриловые ванны</a>
+                      </h3>
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
 								</li>
 								<li class="menu__item">
-									<a class="menu__link" href="#">Аксессуары</a>
+									<a class="menu__link" href="#">
+                    <img class="menu__link-img" src="./img/content/menu-7.png" alt="#">
+                    <span class="menu__link-text">Аксессуары</span>
+                  </a>
 								</li>
 								<li class="menu__item">
-									<a class="menu__link" href="#">Сифоны и трапы</a>
+									<a class="menu__link" href="#">
+                    <img class="menu__link-img" src="./img/content/menu-8.png" alt="#">
+                    <span class="menu__link-text">Сифоны и трапы</span>
+                  </a>
+                                  <div class="menu__submenu submenu">
+                    <div class="submenu__block">
+                      <h3 class="submenu__block-title">
+                        <a href="#">Акриловые ванны</a>
+                      </h3>
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="submenu__block">
+                      <h3 class="submenu__block-title">
+                        <a href="#">Акриловые ванны</a>
+                      </h3>
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="submenu__block">
+                      <h3 class="submenu__block-title">
+                        <a href="#">Акриловые ванны</a>
+                      </h3>
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="submenu__block">
+                      <h3 class="submenu__block-title">
+                        <a href="#">Акриловые ванны</a>
+                      </h3>
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="submenu__block">
+                      <h3 class="submenu__block-title">
+                        <a href="#">Акриловые ванны</a>
+                      </h3>
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Прямоугольные</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
 								</li>
 								<li class="menu__item">
-									<a class="menu__link" href="#">Инсталяции</a>
+									<a class="menu__link" href="#">
+                    <img class="menu__link-img" src="./img/content/menu-9.png" alt="#">
+                    <span class="menu__link-text">Инсталяции</span>
+                  </a>
 								</li>
 								<li class="menu__item">
-									<a class="menu__link" href="#">Другие товары</a>
+									<a class="menu__link" href="#">
+                    <img class="menu__link-img" src="./img/content/menu-10.png" alt="#">
+                    <span class="menu__link-text">Другие товары</span>
+                  </a>
 								</li>
 							</ul>
 						</div>
@@ -384,6 +1307,10 @@
 						<div class="slide__content">
 							<p class="slide__text">Потолочная душевая лейка Rea Ultra Slim SQUARE</p>
 							<p class="slide__price">118.00 руб.</p>
+              <span class="slide__discount">-15 <sub>%</sub></span>
+              <span class="slide__gift">
+                <img src="./img/content/gift.svg" alt="Подарок">
+              </span>
 						</div>
 						</div>
 						<div class="slider__item slide">
@@ -393,6 +1320,10 @@
 						<div class="slide__content">
 							<p class="slide__text">Потолочная душевая лейка Rea Ultra Slim SQUARE</p>
 							<p class="slide__price">118.00 руб.</p>
+              <span class="slide__discount">-15 <sub>%</sub></span>
+              <span class="slide__gift">
+                <img src="./img/content/gift.svg" alt="Подарок">
+              </span>
 						</div>
 						</div>
 						<div class="slider__item slide">
@@ -402,6 +1333,10 @@
 						<div class="slide__content">
 							<p class="slide__text">Потолочная душевая лейка Rea Ultra Slim SQUARE</p>
 							<p class="slide__price">118.00 руб.</p>
+              <span class="slide__discount">-15 <sub>%</sub></span>
+              <span class="slide__gift">
+                <img src="./img/content/gift.svg" alt="Подарок">
+              </span>
 						</div>
 						</div>
 						<div class="slider__item slide">
@@ -411,6 +1346,10 @@
 						<div class="slide__content">
 							<p class="slide__text">Потолочная душевая лейка Rea Ultra Slim SQUARE</p>
 							<p class="slide__price">118.00 руб.</p>
+              <span class="slide__discount">-15 <sub>%</sub></span>
+              <span class="slide__gift">
+                <img src="./img/content/gift.svg" alt="Подарок">
+              </span>
 						</div>
 						</div>
 						<div class="slider__item slide">
@@ -420,6 +1359,10 @@
 						<div class="slide__content">
 							<p class="slide__text">Потолочная душевая лейка Rea Ultra Slim SQUARE</p>
 							<p class="slide__price">118.00 руб.</p>
+              <span class="slide__discount">-15 <sub>%</sub></span>
+              <span class="slide__gift">
+                <img src="./img/content/gift.svg" alt="Подарок">
+              </span>
 						</div>
 						</div>
 						<div class="slider__item slide">
@@ -429,6 +1372,10 @@
 						<div class="slide__content">
 							<p class="slide__text">Потолочная душевая лейка Rea Ultra Slim SQUARE</p>
 							<p class="slide__price">118.00 руб.</p>
+              <span class="slide__discount">-15 <sub>%</sub></span>
+              <span class="slide__gift">
+                <img src="./img/content/gift.svg" alt="Подарок">
+              </span>
 						</div>
 						</div>
 						<div class="slider__item slide">
@@ -438,7 +1385,10 @@
 						<div class="slide__content">
 							<p class="slide__text">Потолочная душевая лейка Rea Ultra Slim SQUARE</p>
 							<p class="slide__price">118.00 руб.</p>
-						</div>
+              <span class="slide__discount">-15 <sub>%</sub></span>
+              <span class="slide__gift">
+                <img src="./img/content/gift.svg" alt="Подарок">
+              </span>
 						</div>
 					</div>
 				</section>
@@ -489,7 +1439,96 @@
 
 			</main>
 
-			<footer></footer>
+			<footer class="page-footer">
+  <div class="container">
+    <ul class="page-footer__menu footer-menu">
+      <li class="footer-menu__item">
+        <h3 class="footer-menu__item-title">Информация</h3>
+        <ul class="footer-menu__sub-menu">
+          <li class="footer-menu__sub-item">
+            <a class="footer-menu__sub-link" href="#">About Us</a>
+          </li>
+          <li class="footer-menu__sub-item">
+            <a class="footer-menu__sub-link" href="#">About Us</a>
+          </li>
+          <li class="footer-menu__sub-item">
+            <a class="footer-menu__sub-link" href="#">About Us</a>
+          </li>
+          <li class="footer-menu__sub-item">
+            <a class="footer-menu__sub-link" href="#">About Us</a>
+          </li>
+          <li class="footer-menu__sub-item">
+            <a class="footer-menu__sub-link" href="#">About Us</a>
+          </li>
+        </ul>
+      </li>
+      <li class="footer-menu__item">
+        <h3 class="footer-menu__item-title">Информация</h3>
+        <ul class="footer-menu__sub-menu">
+          <li class="footer-menu__sub-item">
+            <a class="footer-menu__sub-link" href="#">About Us</a>
+          </li>
+          <li class="footer-menu__sub-item">
+            <a class="footer-menu__sub-link" href="#">About Us</a>
+          </li>
+          <li class="footer-menu__sub-item">
+            <a class="footer-menu__sub-link" href="#">About Us</a>
+          </li>
+          <li class="footer-menu__sub-item">
+            <a class="footer-menu__sub-link" href="#">About Us</a>
+          </li>
+          <li class="footer-menu__sub-item">
+            <a class="footer-menu__sub-link" href="#">About Us</a>
+          </li>
+        </ul>
+      </li>
+      <li class="footer-menu__item">
+        <h3 class="footer-menu__item-title">Информация</h3>
+        <ul class="footer-menu__sub-menu">
+          <li class="footer-menu__sub-item">
+            <a class="footer-menu__sub-link" href="#">About Us</a>
+          </li>
+          <li class="footer-menu__sub-item">
+            <a class="footer-menu__sub-link" href="#">About Us</a>
+          </li>
+          <li class="footer-menu__sub-item">
+            <a class="footer-menu__sub-link" href="#">About Us</a>
+          </li>
+          <li class="footer-menu__sub-item">
+            <a class="footer-menu__sub-link" href="#">About Us</a>
+          </li>
+          <li class="footer-menu__sub-item">
+            <a class="footer-menu__sub-link" href="#">About Us</a>
+          </li>
+        </ul>
+      </li>
+      <li class="footer-menu__item">
+        <h3 class="footer-menu__item-title">Информация</h3>
+        <ul class="footer-menu__sub-menu">
+          <li class="footer-menu__sub-item">
+            <a class="footer-menu__sub-link" href="#">About Us</a>
+          </li>
+          <li class="footer-menu__sub-item">
+            <a class="footer-menu__sub-link" href="#">About Us</a>
+          </li>
+          <li class="footer-menu__sub-item">
+            <a class="footer-menu__sub-link" href="#">About Us</a>
+          </li>
+          <li class="footer-menu__sub-item">
+            <a class="footer-menu__sub-link" href="#">About Us</a>
+          </li>
+          <li class="footer-menu__sub-item">
+            <a class="footer-menu__sub-link" href="#">About Us</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <div class="page-footer__copyright">
+      <p>Разработка сайта <a href="#">P.Luchanok</a></p>
+    </div>
+  </div>
+</footer>
+
 		</div>
 
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
