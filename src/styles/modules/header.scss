@@ -11,7 +11,7 @@ header.page-header {
 
 .nav__list {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .nav__item.active {
@@ -24,8 +24,8 @@ header.page-header {
 
 .nav__link {
     display: block;
-    padding: 6px 10px;
-    font-size: 12px;
+    padding: 10px;
+    font-size: 13px;
     line-height: 16px;
     color: #383b3f;
     transition: color .3s ease-in-out, background-color .3s ease-in-out;
@@ -124,17 +124,22 @@ header.page-header {
     line-height: 22px;
     font-weight: 600;
     color: #fff;
-    background: #00acff;
+    background: #383b3f;
+    transition: background .3s ease-in-out;
 
     &:hover,
     &:focus {
+        background: #00acff;
 
         &::before {
             transform: translateY(-50%) rotate(-180deg);
         }
 
         & + .contacts__wrapper {
-            display: block;
+            transform: scale(1);
+            visibility: visible;
+            opacity: 1;
+            filter: alpha(opacity=1);
         }
     }
 
@@ -147,7 +152,7 @@ header.page-header {
         height: 8px;
         background: url("../img/content/arrow-down.svg") center/contain no-repeat;
         transform: translateY(-50%);
-        transition: transform .1s ease-in-out;
+        transition: transform .2s ease-in-out;
     }
 }
 
@@ -155,15 +160,24 @@ header.page-header {
     position: absolute;
     top: 100%;
     left: 0;
-    display: none;
     width: 100%;
     padding: 10px 15px;
     background: #383b3f;
     border-bottom: 3px solid #00acff;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .25);
+    transform: scale(1, 0);
+    transform-origin: top;
+    visibility: hidden;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transition: all .3s ease-in-out;
+    animation-fill-mode: forwards;
 
     &:hover {
-        display: block;
+        transform: scale(1);
+        visibility: visible;
+        opacity: 1;
+        filter: alpha(opacity=1);
     }
 
     &::before {
@@ -279,7 +293,7 @@ header.page-header {
             height: 8px;
             background: url("../img/content/arrow-down.svg") center/contain no-repeat;
             transform: translateY(-50%);
-            transition: transform .1s ease-in-out;
+            transition: transform .2s ease-in-out;
         }
 
         &:hover,
@@ -290,7 +304,10 @@ header.page-header {
             }
 
             & + .cart__dropdown {
-                display: block;
+                transform: scale(1);
+                visibility: visible;
+                opacity: 1;
+                filter: alpha(opacity=1);
             }
         }
     }
@@ -323,16 +340,25 @@ header.page-header {
         top: 150%;
         right: 0;
         display: flex;
-        display: none;
         justify-content: center;
         align-items: center;
         min-width: 300px;
         padding: 20px;
         background: #fff;
         box-shadow: 0 0 25px rgba(0, 0, 0, .15);
+        transform: scale(1, 0);
+        transform-origin: top;
+        visibility: hidden;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        transition: all .3s ease-in-out;
+        animation-fill-mode: forwards;
 
         &:hover {
-            display: block;
+            transform: scale(1);
+            visibility: visible;
+            opacity: 1;
+            filter: alpha(opacity=1);
         }
 
         &::before {
