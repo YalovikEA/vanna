@@ -1,7 +1,8 @@
 header.page-header {
-    margin: 0 !important;
-    padding: 0 !important;
-    border: 0 !important;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1001;
 }
 
 .page-header__top {
@@ -195,7 +196,7 @@ header.page-header {
             overflow: hidden;
             white-space: nowrap;
             clip: rect(0 0 0 0);
-                    clip-path: inset(100%);
+            clip-path: inset(100%);
 
             -webkit-clip-path: inset(100%);
         }
@@ -246,7 +247,6 @@ header.page-header {
     width: 24px;
     height: 24px;
     margin-right: 5px;
-
     object-fit: contain;
 }
 
