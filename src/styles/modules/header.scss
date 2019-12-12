@@ -280,7 +280,9 @@ header.page-header {
             left: 15px;
             width: 37px;
             height: 37px;
-            background: url("../img/content/cart.svg") center/contain no-repeat;
+            background: url("../img/content/cart.svg") center/18px 21px no-repeat;
+            border: 2px solid #fff;
+            border-radius: 50%;
             transform: translateY(-50%);
         }
 
