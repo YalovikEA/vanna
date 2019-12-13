@@ -12,7 +12,9 @@ header.page-header {
 
 .nav__list {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
+    max-width: 95%;
+    margin: 0 auto;
 }
 
 .nav__item.active {
@@ -23,11 +25,17 @@ header.page-header {
     }
 }
 
+.nav__item {
+    flex-grow: 1;
+}
+
 .nav__link {
     display: block;
+    width: 100%;
     padding: 10px;
     font-size: 13px;
     line-height: 16px;
+    text-align: center;
     color: #383b3f;
     transition: color .3s ease-in-out, background-color .3s ease-in-out;
 
