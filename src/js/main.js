@@ -20,6 +20,9 @@ $(document).ready(function() {
           },
           1000:{
               items: 4
+          },
+          1681:{
+              items: 6
           }
       }
     });

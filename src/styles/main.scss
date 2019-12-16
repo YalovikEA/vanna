@@ -124,7 +124,7 @@ input[type="file"].visually-hidden {
     overflow: hidden;
     white-space: nowrap;
     clip: rect(0 0 0 0);
-            clip-path: inset(100%);
+    clip-path: inset(100%);
 
     -webkit-clip-path: inset(100%);
 }
@@ -154,7 +154,7 @@ input[type="file"].visually-hidden {
         overflow: hidden;
         white-space: nowrap;
         clip: rect(0 0 0 0);
-                clip-path: inset(100%);
+        clip-path: inset(100%);
 
         -webkit-clip-path: inset(100%);
     }
@@ -209,7 +209,6 @@ input[type="file"].visually-hidden {
         width: 30px;
         height: 30px;
         margin-right: 10px;
-
         object-fit: contain;
     }
 
@@ -344,7 +343,6 @@ input[type="file"].visually-hidden {
     display: block;
     width: 100%;
     height: 100%;
-
     object-fit: cover;
 }
 
@@ -399,25 +397,55 @@ input[type="file"].visually-hidden {
 
 .owl-item.center + .active + .active {
 
-    &:hover {
+    @media (max-width: 1680px) {
 
-        .slide__img {
-            box-shadow: none;
+        &:hover {
+
+            .slide__img {
+                box-shadow: none;
+            }
+        }
+
+        .slide__img::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, .7);
+        }
+
+        .slide__content {
+            opacity: 0;
         }
     }
+}
 
-    .slide__img::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(255, 255, 255, .7);
-    }
+.owl-item.center + .active + .active + .active {
 
-    .slide__content {
-        opacity: 0;
+    @media (min-width: 1681px) {
+
+        &:hover {
+
+            .slide__img {
+                box-shadow: none;
+            }
+        }
+
+        .slide__img::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, .7);
+        }
+
+        .slide__content {
+            opacity: 0;
+        }
     }
 }
 
@@ -513,7 +541,6 @@ input[type="file"].visually-hidden {
     img {
         width: 100%;
         height: 100%;
-
         object-fit: contain;
     }
 }
@@ -529,7 +556,7 @@ input[type="file"].visually-hidden {
     overflow: hidden;
     white-space: nowrap;
     clip: rect(0 0 0 0);
-            clip-path: inset(100%);
+    clip-path: inset(100%);
 
     -webkit-clip-path: inset(100%);
 }
@@ -693,7 +720,7 @@ input[type="file"].visually-hidden {
     overflow: hidden;
     white-space: nowrap;
     clip: rect(0 0 0 0);
-            clip-path: inset(100%);
+    clip-path: inset(100%);
 
     -webkit-clip-path: inset(100%);
 }
