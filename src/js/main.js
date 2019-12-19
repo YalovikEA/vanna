@@ -24,4 +24,28 @@ $(document).ready(function() {
       }
     });
   })
+
+  var catalog = $('.catalog__toggler');
+  var catalogList = $('.catalog__list');
+  var catalogItem = $('.catalog__item');
+  var subcatalog = $('.subcatalog');
+  var subcatalogBlock = $('.subcatalog__block');
+  var subcatalogList = $('.subcatalog__list');
+
+  catalog.on('click', function() {
+    $(this).toggleClass('active');
+    $(this).siblings(catalogList).slideToggle(500);
+  })
+
+  catalogItem.on('click', function(e) {
+    e.stopImmediatePropagation();
+    $(this).toggleClass('active');
+    $(this).find(subcatalog).slideToggle(500);
+  })
+
+  subcatalogBlock.on('click', function(e) {
+    e.stopImmediatePropagation();
+    $(this).toggleClass('active');
+    $(this).find(subcatalogList).slideToggle(500);
+  })
 });
