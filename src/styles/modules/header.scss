@@ -517,6 +517,8 @@ header.page-header {
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 50px;
+        height: 50px;
         padding: 15px;
         background-color: #00acff;
         border: none;
@@ -524,9 +526,18 @@ header.page-header {
         &::before {
             content: "";
             display: block;
-            width: 20px;
-            height: 20px;
-            background-color: #fff;
+            width: 18px;
+            height: 12px;
+            background: url("../img/content/menu.svg") center/cover no-repeat;
+        }
+
+        &.active {
+
+            &::before {
+                width: 13px;
+                height: 13px;
+                background: url("../img/content/menu-close.svg") center/cover no-repeat;
+            }
         }
     }
 }
@@ -541,9 +552,23 @@ header.page-header {
     padding: 0 15px 0 20px;
     background-color: #fff;
     box-shadow: 4px 0 4px rgba(0, 0, 0, .25);
+    transform: scale(1, 0);
+    transform-origin: top;
+    visibility: hidden;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transition: all .3s ease-in-out;
+    animation-fill-mode: forwards;
 
     @media (min-width: 768px) {
         display: none;
+    }
+
+    &.active {
+        transform: scale(1);
+        visibility: visible;
+        opacity: 1;
+        filter: alpha(opacity=1);
     }
 
     &__header {
@@ -661,6 +686,66 @@ header.page-header {
             border: 1px solid #383b3f;
             border-radius: 50%;
         }
+
+        &.active {
+
+            &::after {
+                background: url("../img/content/phone-blue.svg") center/10px 16px no-repeat;
+                border: 1px solid #00acff;
+            }
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .mobile-menu__content {
+        height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+
+    .contacts__category--online {
+        margin-bottom: 60px;
+    }
+
+    .contacts__category--social {
+
+        .contacts__item {
+            flex-shrink: 0;
+        }
+
+        .contacts__link {
+            display: block;
+            width: 32px;
+            height: 32px;
+        }
+
+        .contacts__link-img {
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    .contacts__title {
+        padding: 8px 0;
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: 600;
+        color: #383b3f;
+        border-bottom: 1px solid #00acff;
+    }
+
+    .contacts__link {
+        font-size: 16px;
+        line-height: 22px;
+        color: #383b3f;
+    }
+
+    .contacts__link-img {
+        width: 26px;
+        height: 26px;
+        margin-right: 10px;
     }
 
     // Menu

@@ -385,6 +385,22 @@ input[type="file"].visually-hidden {
     position: relative;
 }
 
+.slider.owl-carousel.owl-loaded {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: block;
+    }
+
+    &.slider--four {
+        display: block;
+
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
+}
+
 .slider--four {
 
     .slide {
@@ -404,7 +420,7 @@ input[type="file"].visually-hidden {
 
     .owl-nav {
         position: initial;
-        display: flex;
+        display: flex !important;
         flex-direction: row-reverse;
         justify-content: center;
         margin-top: 10px;
