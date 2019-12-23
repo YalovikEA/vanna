@@ -259,8 +259,9 @@ input[type="file"].visually-hidden {
     left: 100%;
     z-index: 1000;
     display: flex;
-    flex-wrap: wrap;
-    width: 65vw;
+
+// flex-wrap: wrap;
+    // width: 65vw;
     padding: 10px;
     background-color: #fff;
     box-shadow: 0 0 25px rgba(0, 0, 0, .15);
@@ -305,8 +306,13 @@ input[type="file"].visually-hidden {
         height: 100%;
     }
 
+    &.wrap {
+        flex-wrap: wrap;
+        width: 730px;
+    }
+
     &__block {
-        width: calc((100% - 10px * 6) / 3);
+        width: 216px;
         margin: 10px;
     }
 
@@ -573,6 +579,7 @@ input[type="file"].visually-hidden {
 .owl-nav {
     position: absolute;
     top: 35%;
+    display: block !important;
     width: 100%;
 }
 
