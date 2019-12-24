@@ -99,40 +99,40 @@ $(document).ready(function() {
 
 
   // search
-  $('#search_query').autocomplete({
-    delay: 0,
-    appendTo: "#autocomplete-results",
-    source: function(request, response) {
-      $.ajax({
-        url: 'index.php?route=search/autocomplete&filter_name=' +  encodeURIComponent(request.term),
-        dataType: 'json',
-        success: function(json) {
-          response($.map(json, function(item) {
-            return {
-              label: item.name,
-              value: item.product_id,
-              href: item.href,
-              thumb: item.thumb,
-              desc: item.desc,
-              price: item.price
-            }
-          }));
-        }
-      });
-    },
-    select: function(event, ui) {
-      document.location.href = ui.item.href;
+  // $('#search_query').autocomplete({
+  //   delay: 0,
+  //   appendTo: "#autocomplete-results",
+  //   source: function(request, response) {
+  //     $.ajax({
+  //       url: 'index.php?route=search/autocomplete&filter_name=' +  encodeURIComponent(request.term),
+  //       dataType: 'json',
+  //       success: function(json) {
+  //         response($.map(json, function(item) {
+  //           return {
+  //             label: item.name,
+  //             value: item.product_id,
+  //             href: item.href,
+  //             thumb: item.thumb,
+  //             desc: item.desc,
+  //             price: item.price
+  //           }
+  //         }));
+  //       }
+  //     });
+  //   },
+  //   select: function(event, ui) {
+  //     document.location.href = ui.item.href;
 
-      return false;
-    },
-    focus: function(event, ui) {
-      return false;
-    },
-    minLength: 2
-  })
-  .data( "ui-autocomplete" )._renderItem = function( ul, item ) {
-  return $( "<li>" )
-    .append( "<a>" + item.label + "</a>" )
-    .appendTo( ul );
-  };
+  //     return false;
+  //   },
+  //   focus: function(event, ui) {
+  //     return false;
+  //   },
+  //   minLength: 2
+  // })
+  // .data( "ui-autocomplete" )._renderItem = function( ul, item ) {
+  // return $( "<li>" )
+  //   .append( "<a>" + item.label + "</a>" )
+  //   .appendTo( ul );
+  // };
 });
