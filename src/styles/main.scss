@@ -142,7 +142,7 @@ input[type="file"].visually-hidden {
     overflow: hidden;
     white-space: nowrap;
     clip: rect(0 0 0 0);
-            clip-path: inset(100%);
+    clip-path: inset(100%);
 
     -webkit-clip-path: inset(100%);
 }
@@ -177,7 +177,7 @@ input[type="file"].visually-hidden {
         overflow: hidden;
         white-space: nowrap;
         clip: rect(0 0 0 0);
-                clip-path: inset(100%);
+        clip-path: inset(100%);
 
         -webkit-clip-path: inset(100%);
     }
@@ -217,6 +217,7 @@ input[type="file"].visually-hidden {
 
     &:hover,
     &:focus {
+        color: #fff;
         background-color: #0099e6;
 
         &::before {
@@ -236,7 +237,6 @@ input[type="file"].visually-hidden {
         width: 30px;
         height: 30px;
         margin-right: 10px;
-
         object-fit: contain;
     }
 
@@ -259,8 +259,7 @@ input[type="file"].visually-hidden {
     left: 100%;
     z-index: 1000;
     display: flex;
-
-// flex-wrap: wrap;
+    // flex-wrap: wrap;
     // width: 65vw;
     padding: 10px;
     background-color: #fff;
@@ -382,7 +381,6 @@ input[type="file"].visually-hidden {
     display: block;
     width: 100%;
     height: 100%;
-
     object-fit: cover;
 }
 
@@ -679,7 +677,6 @@ input[type="file"].visually-hidden {
     img {
         width: 100%;
         height: 100%;
-
         object-fit: contain;
     }
 }
@@ -702,7 +699,7 @@ input[type="file"].visually-hidden {
     overflow: hidden;
     white-space: nowrap;
     clip: rect(0 0 0 0);
-            clip-path: inset(100%);
+    clip-path: inset(100%);
 
     -webkit-clip-path: inset(100%);
 }
@@ -965,7 +962,7 @@ input[type="file"].visually-hidden {
     overflow: hidden;
     white-space: nowrap;
     clip: rect(0 0 0 0);
-            clip-path: inset(100%);
+    clip-path: inset(100%);
 
     -webkit-clip-path: inset(100%);
 }

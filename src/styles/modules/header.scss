@@ -219,41 +219,41 @@ header.page-header {
     text-align: left;
     background: #fff !important;
     border: none !important;
-            border-radius: 0 !important;
-            box-shadow: 0 0 25px rgba(0, 0, 0, .15) !important;
+    border-radius: 0 !important;
+    box-shadow: 0 0 25px rgba(0, 0, 0, .15) !important;
 
     -webkit-border-radius: 0 !important;
-       -moz-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
     -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, .15) !important;
-       -moz-box-shadow: 0 0 25px rgba(0, 0, 0, .15) !important;
+    -moz-box-shadow: 0 0 25px rgba(0, 0, 0, .15) !important;
 }
 
 .dropdown-menu-type-2 .ui-autocomplete {
-            border-radius: 8px !important;
+    border-radius: 8px !important;
 
     -webkit-border-radius: 8px !important;
-       -moz-border-radius: 8px !important;
+    -moz-border-radius: 8px !important;
 }
 
 .dropdown-menu-type-3 .ui-autocomplete {
-            border-radius: 4px !important;
+    border-radius: 4px !important;
 
     -webkit-border-radius: 4px !important;
-       -moz-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
 }
 
 .dropdown-menu-type-4 .ui-autocomplete {
-            border-radius: 2px !important;
+    border-radius: 2px !important;
 
     -webkit-border-radius: 2px !important;
-       -moz-border-radius: 2px !important;
+    -moz-border-radius: 2px !important;
 }
 
 .dropdown-menu-type-5 .ui-autocomplete {
-            border-radius: 3px !important;
+    border-radius: 3px !important;
 
     -webkit-border-radius: 3px !important;
-       -moz-border-radius: 3px !important;
+    -moz-border-radius: 3px !important;
 }
 
 .ui-autocomplete:after {
@@ -306,11 +306,11 @@ header.page-header {
     color: #333 !important;
     background: none !important;
     border: none !important;
-            border-radius: 0 !important;
+    border-radius: 0 !important;
     cursor: pointer !important;
 
     -webkit-border-radius: 0 !important;
-       -moz-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
 }
 
 .ui-autocomplete li a.ui-state-focus {
@@ -476,7 +476,7 @@ header.page-header {
             overflow: hidden;
             white-space: nowrap;
             clip: rect(0 0 0 0);
-                    clip-path: inset(100%);
+            clip-path: inset(100%);
 
             -webkit-clip-path: inset(100%);
         }
@@ -518,6 +518,7 @@ header.page-header {
 
     &:hover,
     &:focus {
+        color: #fff;
         text-decoration: underline;
     }
 }
@@ -527,7 +528,6 @@ header.page-header {
     width: 24px;
     height: 24px;
     margin-right: 5px;
-
     object-fit: contain;
 }
 
@@ -1046,7 +1046,6 @@ header.page-header {
             width: 30px;
             height: 30px;
             margin-right: 10px;
-
             object-fit: contain;
         }
     }
